@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyBF_i7XUoO-0_tfox8DJ918mrDHhwPeJdU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>34586931019</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.sakshamshrey.UrbanServicePlatform</string>
+	<key>PROJECT_ID</key>
+	<string>urbanserviceplatform</string>
+	<key>STORAGE_BUCKET</key>
+	<string>urbanserviceplatform.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:34586931019:ios:af44ecfd6b504b9f11c2ce</string>
+</dict>
+</plist>

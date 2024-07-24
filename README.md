@@ -37,6 +37,9 @@ Urban Service Platform is a mobile application designed using SwiftUI and Fireba
 <img src="https://github.com/user-attachments/assets/52a3b981-65c6-4265-b2b0-eb8e614a3020" width="200">
 <img src="https://github.com/user-attachments/assets/dfcb732c-53d6-4617-90d3-7246a5fdfaa8" width="200">
 
+<img src="https://github.com/user-attachments/assets/579cb9cd-00a3-4db4-a747-4d936f427077" width="500">
+<img src="https://github.com/user-attachments/assets/ac841942-394f-4085-aacf-c5784aac9dfa" width="500">
+<img src="https://github.com/user-attachments/assets/f18360e0-e7c1-4962-8c95-16cd33be16ab" width="500">
 
 
 ## Installation

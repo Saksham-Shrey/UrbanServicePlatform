@@ -51,9 +51,12 @@ git clone https://github.com/saksham-shrey/UrbanServicePlatform.git
 
 ```
 cd UrbanServicePlatform
+open UrbanServicePlatform.xcodeproj
+```
+or if using CocoaPods for Firebase SDK then, 
+``` 
 open UrbanServicePlatform.xcworkspace
 ```
-
 3. Install CocoaPods dependencies (if using CocoaPods - I have used Swift Package Manager for the Firebase iOS SDK):
 
 ```

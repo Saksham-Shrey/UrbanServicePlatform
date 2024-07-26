@@ -36,11 +36,17 @@ Urban Service Platform is a mobile application designed using SwiftUI and Fireba
 <img src="https://github.com/user-attachments/assets/dac99516-43ef-4053-8598-05b50d59de9c" width="200">
 <img src="https://github.com/user-attachments/assets/52a3b981-65c6-4265-b2b0-eb8e614a3020" width="200">
 <img src="https://github.com/user-attachments/assets/dfcb732c-53d6-4617-90d3-7246a5fdfaa8" width="200">
+<img src="https://github.com/user-attachments/assets/ccff3fb3-1a19-4832-a968-dd2254990898" width="200">
+<img src="https://github.com/user-attachments/assets/550b2a43-946f-4d0a-a3e3-277c6690dac6" width="200">
+<img src="https://github.com/user-attachments/assets/3b903079-039b-4ac9-b6cc-390e66a0a218" width="200">
+<img src="https://github.com/user-attachments/assets/a8844321-12a0-4925-9289-ce9ed3208691" width="200">
+<img src="https://github.com/user-attachments/assets/6f5e7a45-b1ca-4407-a8e2-f49e48564cfa" width="200">
+
+
 
 <img src="https://github.com/user-attachments/assets/579cb9cd-00a3-4db4-a747-4d936f427077" width="500">
 <img src="https://github.com/user-attachments/assets/ac841942-394f-4085-aacf-c5784aac9dfa" width="500">
-<img src="https://github.com/user-attachments/assets/f18360e0-e7c1-4962-8c95-16cd33be16ab" width="500">
-
+<img src="https://github.com/user-attachments/assets/109874d2-0c6a-4a24-bb60-07098eb8be7b" width="500">
 
 ## Installation
 

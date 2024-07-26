@@ -16,6 +16,8 @@ Urban Service Platform is a mobile application designed using SwiftUI and Fireba
 - **Bid Selection**: Consumers can review bids and select the one that best meets their needs.
 - **Service Management for Workers**: Workers can view all posted services, including those they've bid on and those to which their bid has been accepted.
 - **Service Management for Consumers**: Consumers can view and manage only the services they have posted.
+- **Payment Screen**: A mock screen for payment is included, but it does not yet have a payment gateway integration.
+- **Rating and Reviews**: Consumers and workers can rate and review each other after a service is completed.
 
 ## Screenshots
 
@@ -46,7 +48,7 @@ Urban Service Platform is a mobile application designed using SwiftUI and Fireba
 
 <img src="https://github.com/user-attachments/assets/579cb9cd-00a3-4db4-a747-4d936f427077" width="500">
 <img src="https://github.com/user-attachments/assets/ac841942-394f-4085-aacf-c5784aac9dfa" width="500">
-<img src="https://github.com/user-attachments/assets/109874d2-0c6a-4a24-bb60-07098eb8be7b" width="500">
+<img src="https://github.com/user-attachments/assets/67c40f34-d24a-431c-96ff-95d2919893a2" width="500">
 
 ## Installation
 

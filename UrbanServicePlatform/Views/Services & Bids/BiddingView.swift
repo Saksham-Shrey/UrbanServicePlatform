@@ -13,6 +13,7 @@ struct BiddingView: View {
     @EnvironmentObject var authManager: AuthManager
     var serviceID: String
     var bidderID: String
+    var isServicePoster: Bool = false
     
     @State private var bid: String = ""
     @State private var bids: [String : String] = [:]
@@ -52,7 +53,7 @@ struct BiddingView: View {
                                         .stroke(acceptedBidderID == key ? Color.green : Color.black, lineWidth: 1)
                                 }
                                 
-                                if authManager.currentUserRole.contains("Consumer") && authManager.currentUserID == key {
+                                if authManager.currentUserRole.contains("Consumer") && isServicePoster {
                                     Button(action: {
                                         Task {
                                             await authManager.setSelectedBidder(documentID: serviceID ,bidderID: key)

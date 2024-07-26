@@ -29,7 +29,7 @@ struct ServicesView: View {
                                 EachServiceView(serviceModelObj: service)
                                     .background(
                                         NavigationLink(
-                                            destination: BiddingView(serviceID: service.id ?? "", bidderID: Auth.auth().currentUser?.uid ?? ""),
+                                            destination: BiddingView(serviceID: service.id ?? "", bidderID: Auth.auth().currentUser?.uid ?? "", isServicePoster: true),
                                             label: { EmptyView()
                                                     .allowsHitTesting(false)
                                             }

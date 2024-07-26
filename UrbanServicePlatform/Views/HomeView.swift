@@ -22,7 +22,7 @@ struct HomeView: View {
                     
                     if authManager.currentUserRole.contains("Consumer") {
                         Button(action: {
-                            path.append("Create Service")
+                            path.append("CreateService")
                         }, label: {
                             ServiceCard(title: "Create Service", icon: "plus.circle.fill")
                         })

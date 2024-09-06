@@ -238,5 +238,20 @@ public class AuthManager: ObservableObject {
             }
         }
     }
+    
+    func addRatingAndReview(to documentId: String, rating: String, review: String) async throws {
+        let db = Firestore.firestore()
+        
+        do {
+            try await db.collection("Users").document(documentId).updateData([
+                "rating": rating,
+                "review": review
+            ])
+            print("Document successfully updated with rating and review")
+        } catch {
+            print("Error updating document: \(error)")
+            throw error
+        }
+    }
 
 }

@@ -7,8 +7,6 @@
 
 import SwiftUI
 import Firebase
-import SwiftUI
-import Firebase
 
 struct CurrentUserDetails: View {
     

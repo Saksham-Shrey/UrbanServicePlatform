@@ -11,6 +11,7 @@
 		E9377F592C4D8EDC00034F30 /* ServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9377F582C4D8EDC00034F30 /* ServiceModel.swift */; };
 		E9377F5D2C4D949C00034F30 /* ServiceCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9377F5C2C4D949C00034F30 /* ServiceCreationView.swift */; };
 		E9377F612C4F991000034F30 /* BiddingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9377F602C4F991000034F30 /* BiddingView.swift */; };
+		E952A03E2C53DA80009A7EE3 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E952A03D2C53DA80009A7EE3 /* TestView.swift */; };
 		E99A11432C4FECDC00C5D258 /* AcceptedBidsServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99A11422C4FECDC00C5D258 /* AcceptedBidsServicesView.swift */; };
 		E9C011EC2C485E1F0096E982 /* CurrentUserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C011EB2C485E1F0096E982 /* CurrentUserDetails.swift */; };
 		E9D6F9D22C47B155009AD541 /* UrbanServicePlatformApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D6F9D12C47B155009AD541 /* UrbanServicePlatformApp.swift */; };
@@ -30,6 +31,7 @@
 		E9377F582C4D8EDC00034F30 /* ServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceModel.swift; sourceTree = "<group>"; };
 		E9377F5C2C4D949C00034F30 /* ServiceCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCreationView.swift; sourceTree = "<group>"; };
 		E9377F602C4F991000034F30 /* BiddingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiddingView.swift; sourceTree = "<group>"; };
+		E952A03D2C53DA80009A7EE3 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		E99A11422C4FECDC00C5D258 /* AcceptedBidsServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceptedBidsServicesView.swift; sourceTree = "<group>"; };
 		E9C011EB2C485E1F0096E982 /* CurrentUserDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserDetails.swift; sourceTree = "<group>"; };
 		E9D6F9CE2C47B155009AD541 /* UrbanServicePlatform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UrbanServicePlatform.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +74,7 @@
 				E9377F562C4BC6BF00034F30 /* ServicesView.swift */,
 				E9377F5C2C4D949C00034F30 /* ServiceCreationView.swift */,
 				E9377F602C4F991000034F30 /* BiddingView.swift */,
+				E952A03D2C53DA80009A7EE3 /* TestView.swift */,
 				E99A11422C4FECDC00C5D258 /* AcceptedBidsServicesView.swift */,
 			);
 			path = "Services & Bids";
@@ -227,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E952A03E2C53DA80009A7EE3 /* TestView.swift in Sources */,
 				E9377F592C4D8EDC00034F30 /* ServiceModel.swift in Sources */,
 				E9C011EC2C485E1F0096E982 /* CurrentUserDetails.swift in Sources */,
 				E99A11432C4FECDC00C5D258 /* AcceptedBidsServicesView.swift in Sources */,

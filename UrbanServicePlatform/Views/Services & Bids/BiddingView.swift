@@ -19,7 +19,12 @@ struct BiddingView: View {
     @State private var bids: [String : String] = [:]
     @State private var isLoading: Bool = true
     @State private var acceptedBidderID: String = ""
-
+    
+    @State private var payAndReview = false
+    
+    @State private var rating = 0
+    @State private var review = ""
+    
     
     var body: some View {
         ZStack {
@@ -54,20 +59,179 @@ struct BiddingView: View {
                                 }
                                 
                                 if authManager.currentUserRole.contains("Consumer") && isServicePoster {
-                                    Button(action: {
-                                        Task {
-                                            await authManager.setSelectedBidder(documentID: serviceID ,bidderID: key)
-                                        }
-                                    }, label: {
-                                        Text("Accept")
-                                            .padding(12)
-                                            .font(.custom("MarkerFelt-Wide", size: 16))
-                                            .foregroundStyle(Color.white)
-                                            .background {
-                                                RoundedRectangle(cornerRadius: 20)
-                                                    .fill(Color.green)
+                                    VStack {
+                                        Button(action: {
+                                            Task {
+                                                await authManager.setSelectedBidder(documentID: serviceID ,bidderID: key)
+                                                
+                                                payAndReview.toggle()
                                             }
-                                    })
+                                        }, label: {
+                                            Text("Accept")
+                                                .padding(12)
+                                                .font(.custom("MarkerFelt-Wide", size: 16))
+                                                .foregroundStyle(Color.white)
+                                                .background {
+                                                    RoundedRectangle(cornerRadius: 20)
+                                                        .fill(Color.green)
+                                                }
+                                        })
+                                        if payAndReview {
+                                            HStack {
+                                                NavigationLink {
+                                                    ZStack {
+                                                        Image("background")
+                                                            .resizable()
+                                                            .scaledToFill()
+                                                            .opacity(0.8)
+                                                            .ignoresSafeArea(.all)
+                                                        
+                                                        VStack {
+                                                            Text("Pay ₹ \(value)")
+                                                                .padding(12)
+                                                                .background {
+                                                                    RoundedRectangle(cornerRadius: 15)
+                                                                        .stroke(Color.orange, lineWidth: 2)
+                                                                }
+                                                            
+                                                            Button(action: {
+                                                                
+                                                            }, label: {
+                                                                Text("Pay")
+                                                                    .padding(12)
+                                                                    .font(.custom("Georgia", size: 24))
+                                                                    .foregroundStyle(.white)
+                                                                    .background {
+                                                                        RoundedRectangle(cornerRadius: 20)
+                                                                            .fill(Color.orange)
+                                                                    }
+                                                            })
+                                                            
+                                                            
+                                                        }
+                                                    }
+                                                } label: {
+                                                    Text("Pay")
+                                                        .padding(12)
+                                                        .font(.custom("Georgia", size: 24))
+                                                        .foregroundStyle(.white)
+                                                        .background {
+                                                            RoundedRectangle(cornerRadius: 20)
+                                                                .fill(Color.orange)
+                                                        }
+                                                }
+                                                
+                                                NavigationLink {
+                                                    ZStack {
+                                                        Image("background")
+                                                            .resizable()
+                                                            .scaledToFill()
+                                                            .opacity(0.8)
+                                                            .ignoresSafeArea(.all)
+                                                        
+                                                        VStack {
+                                                            HStack {
+                                                                Button {
+                                                                    rating = 1
+                                                                } label: {
+                                                                    Image(systemName: "star")
+                                                                        .background {
+                                                                            rating >= 1 ? Color.yellow : Color.clear
+                                                                        }
+                                                                }
+                                                                
+                                                                Button {
+                                                                    rating = 2
+                                                                } label: {
+                                                                    Image(systemName: "star")
+                                                                        .background {
+                                                                            rating >= 2 ? Color.yellow : Color.clear
+                                                                        }
+                                                                }
+                                                                
+                                                                
+                                                                Button {
+                                                                    rating = 3
+                                                                } label: {
+                                                                    Image(systemName: "star")
+                                                                        .background {
+                                                                            rating >= 3 ? Color.yellow : Color.clear
+                                                                        }
+                                                                }
+                                                                
+                                                                
+                                                                Button {
+                                                                    rating = 4
+                                                                } label: {
+                                                                    Image(systemName: "star")
+                                                                        .background {
+                                                                            rating >= 4 ? Color.yellow : Color.clear
+                                                                        }
+                                                                }
+                                                                
+                                                                
+                                                                Button {
+                                                                    rating = 5
+                                                                } label: {
+                                                                    Image(systemName: "star")
+                                                                        .background {
+                                                                            rating >= 5 ? Color.yellow : Color.clear
+                                                                        }
+                                                                }
+                                                            }
+                                                            .padding(.all)
+                                                            
+                                                            
+                                                            TextField("", text: $review)
+                                                                .padding(12)
+                                                                .background {
+                                                                    RoundedRectangle(cornerRadius: 20)
+                                                                        .stroke(Color.black, lineWidth: 2)
+                                                                }
+                                                            
+                                                            Button {
+                                                                Task {
+                                                                    do {
+                                                                        try await authManager.addRatingAndReview(to: key, rating: String(rating), review: review)
+                                                                    } catch {
+                                                                        print("Failed to update document: \(error)")
+                                                                    }
+                                                                }
+                                                            } label: {
+                                                                Text("Submit")
+                                                                    .padding(12)
+                                                                    .font(.custom("Georgia", size: 24))
+                                                                    .foregroundStyle(.black)
+                                                                    .background {
+                                                                        RoundedRectangle(cornerRadius: 20)
+                                                                            .fill(Color.yellow)
+                                                                            .foregroundStyle(.white)
+                                                                    }
+                                                                
+                                                            }
+                                                            
+                                                            
+                                                        }
+                                                        .padding(.all)
+                                                    }
+                                                } label: {
+                                                    Text("Review")
+                                                        .padding(12)
+                                                        .font(.custom("Georgia", size: 24))
+                                                        .foregroundStyle(.black)
+                                                        .minimumScaleFactor(0.6)
+                                                        .lineLimit(1)
+                                                        .background {
+                                                            RoundedRectangle(cornerRadius: 20)
+                                                                .fill(Color.yellow)
+                                                                .foregroundStyle(.white)
+                                                        }
+                                                }
+                                            }
+                                            
+                                        }
+                                        
+                                    }
                                 }
                             }
                         }
